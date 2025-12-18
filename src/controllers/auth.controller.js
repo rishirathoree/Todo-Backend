@@ -9,6 +9,16 @@ const Create = asyncHandler(async (req, res, next) => {
 
     const { email, password, firstName, lastName } = req.body
 
+    const findExist = await users.findOne({
+        where: {
+            email
+        }
+    })
+
+    if(findExist){
+        return res.status(400).json(new ApiResponse(400, null, 'User already exist'))
+    }
+
     const hashPasswordBcrypt = await hashPassword(password,)
 
     const createEntries = await users.create({
