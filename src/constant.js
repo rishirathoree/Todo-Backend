@@ -12,10 +12,10 @@ const PUBLIC_JWT_EXPIRY = String(process.env.ACCESS_TOKEN_EXPIRY)
 const CORS_CONFIG = {
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE"],
-  origin: [
-    'http://localhost:5173',
-  ],
-  // origin:"*"
+  // origin: [
+    // 'http://localhost:5173',
+  // ],
+  origin:"*"
 };
 
 module.exports = {
