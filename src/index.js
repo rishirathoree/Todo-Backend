@@ -9,8 +9,9 @@ const port = process.env.PORT || 3000
 // routes imports
 const authRoute = require("./routes/auth.routes")
 const todosRoute = require("./routes/todos.routes")
+const { CORS_CONFIG } = require("./constant")
 
-app.use(cors())
+app.use(cors(CORS_CONFIG))
 app.use(express.json())
 
 app.use("/auth",authRoute)
