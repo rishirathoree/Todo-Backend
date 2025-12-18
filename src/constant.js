@@ -13,15 +13,7 @@ const CORS_CONFIG = {
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE"],
   origin: [
-    'http://localhost:5000',       // Local dev
-    'http://localhost:7677',
-    "http://localhost:7676", // Admin
-    'http://localhost:8787',
-    'https://ydrings.com',
     'http://localhost:5173',
-    'https://www.ydrings.com',     // Client
-    'https://admin.ydrings.com',   // Admin
-    'https://api.ydrings.com'      // Optional (for self-call/test)
   ],
   // origin:"*"
 };

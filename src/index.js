@@ -13,6 +13,7 @@ const { CORS_CONFIG } = require("./constant")
 
 app.use(cors(CORS_CONFIG))
 app.use(express.json())
+app.use(express.urlencoded({ extended: true }));
 
 app.use("/auth",authRoute)
 app.use("/todos",todosRoute)
