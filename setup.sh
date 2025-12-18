@@ -1,4 +1,4 @@
-npm ci
+npm install
 cd token_secrets
 node keygen.js
 cd ..
