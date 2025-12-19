@@ -52,8 +52,8 @@ DB_DIALECT=postgres
 ### 4. Create and migrate the database
 
 ``` bash
-npx sequelize db:create
-npx sequelize db:migrate
+npx sequelize-cli db:create
+npx sequelize-cli db:migrate
 ```
 
 ------------------------------------------------------------------------
